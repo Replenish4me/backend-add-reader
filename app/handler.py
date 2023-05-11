@@ -4,7 +4,7 @@ import json
 import os
 import pymysql
 
-def insert_reader(event, context):
+def lambda_handler(event, context):
     # Leitura dos dados da requisição
     leitor_id = event['leitor_id']
     token = event['token']
